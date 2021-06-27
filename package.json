@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-arguments",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Test if a value is an arguments object.",
   "license": "Apache-2.0",
   "author": {
