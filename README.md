@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@deno/mod.js';
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.1.0-deno/mod.js';
 ```
 
 #### isArguments( value )
@@ -72,7 +72,7 @@ bool = isArguments( [] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@deno/mod.js';
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.1.0-deno/mod.js';
 
 function foo() {
     return arguments;
