@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@esm/index.mjs';
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.1.0-esm/index.mjs';
 ```
 
 #### isArguments( value )
@@ -77,7 +77,7 @@ bool = isArguments( [] );
 <body>
 <script type="module">
 
-import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@esm/index.mjs';
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.1.0-esm/index.mjs';
 
 function foo() {
     return arguments;
