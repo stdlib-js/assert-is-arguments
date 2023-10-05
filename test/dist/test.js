@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,95 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable object-curly-newline */
-
 'use strict';
 
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var isArguments = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isArguments, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided an `arguments` object', function test( t ) {
-	t.strictEqual( isArguments( arguments ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an `arguments` object', function test( t ) {
-	var values;
-	var i;
-
-	function Arguments() {
-		return this;
-	}
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		[],
-		{},
-		{ 'length': 3.14 },
-		{ 'length': -1 },
-		{ 'length': '5' },
-		function noop() {},
-		new Arguments(),
-		Array.prototype.slice.call( arguments )
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isArguments( values[i] ), false, 'returns false for when provided ' + values[i] );
-	}
-	t.end();
-});
-
-tape( 'the function uses a polyfill for environments which return an unexpected internal class', function test( t ) {
-	var isArguments;
-	var values;
-	var i;
-
-	function Arguments() {
-		return this;
-	}
-
-	isArguments = proxyquire( './../dist/index.js', {
-		'./detect.js': false
-	});
-
-	t.strictEqual( isArguments( arguments ), true, 'returns true when provided an `arguments` object' );
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		[],
-		{},
-		{ 'length': 3.14 },
-		{ 'length': -1 },
-		{ 'length': '5' },
-		function noop() {},
-		new Arguments(),
-		Array.prototype.slice.call( arguments )
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isArguments( values[i] ), false, 'returns false when provided '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
