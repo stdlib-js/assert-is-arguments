@@ -41,7 +41,7 @@
     "@stdlib/assert-is-array": "^0.1.1",
     "@stdlib/assert-is-enumerable-property": "^0.1.0",
     "@stdlib/constants-uint32-max": "^0.1.1",
-    "@stdlib/math-base-assert-is-integer": "^0.1.0",
+    "@stdlib/math-base-assert-is-integer": "^0.1.1",
     "@stdlib/utils-native-class": "^0.1.1"
   },
   "devDependencies": {
