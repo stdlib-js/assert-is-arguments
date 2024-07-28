@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-arguments/tags). For example,
+
+```javascript
 import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.2.2-esm/index.mjs';
 ```
 
@@ -77,7 +82,7 @@ bool = isArguments( [] );
 <body>
 <script type="module">
 
-import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@v0.2.2-esm/index.mjs';
+import isArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arguments@esm/index.mjs';
 
 function foo() {
     return arguments;
